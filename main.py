@@ -49,7 +49,7 @@ def final_result():
         pos=pos+h['pos']
         neu=neu+h['neu']
 
-    return ("Overall negative",neg/i,"News is positive",pos/i,"news is neutral",neu/i)
+    return ("Overall negative",neg/i,"Overall positive",pos/i,"Overall neutral",neu/i)
 print('Entities', [(ent.text, ent.label_) for ent in doc.ents])
 print('Tokens', [(t.text, t.ent_type_, t.ent_iob) for t in doc])
 st.write(final_result())

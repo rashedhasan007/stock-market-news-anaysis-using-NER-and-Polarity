@@ -1,5 +1,5 @@
 streamlit
 nltk
-spacy
+spacy==2.2.4
 vaderSentiment
 tqdm

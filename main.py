@@ -3,6 +3,7 @@ import nltk
 import spacy
 from spacy import displacy
 from polarity_pred import sentiment_scores
+nltk.download('punkt')
 nlp = spacy.load("en_example_pipeline")
 st.title("INPUT NEWS")
 h1=st.text_area('Input News:',height=20)
